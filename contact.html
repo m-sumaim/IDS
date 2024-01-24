@@ -5,35 +5,190 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2 etc Tutorial</title>
+        <title>IDS</title>
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
         <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+
+            <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("VueUlMJxLVhccvSsv");
+       })();
+    </script>
+    
     </head>
 
     <body>
 
         <!-- Navigation -->
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            
+            <div class="navigation">
+                <ul>
+                    <i id="menu-close" class="fas fa-times"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Services</a></li>
+                    <li><a href="course.html">Pricing</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+                <img id="menu-btn" src="images/menu.png" alt="">
+            </div>
+        </nav>
 
-        <!-- hero -->
+        <!-- Home -->
+        <section id="about-home">
+            <h2>Contact Us</h2>
+        </section>
+        
 
-        <!-- contact -->
+        <section id="contact">
+            <div class="getin">
+                <h2>Get In Touch</h2>
+                <p>Looking for help? Fill the form and start your journey</p>
 
-        <!-- map -->
+                <div class="getin-details">
+                    <h3>Headquarters</h3>
+                    <div>
+                        <i class="far fa-home get"></i>
+                        <p>Manjyote Singh, 23 Rocky Road, Huntington, Huntington, Hamilton, 3210 , New Zealand</p>
+                    </div>
 
-        <!-- footer -->
+                    <h3>Phone</h3>
+                    <div>
+                        <i class="fas fa-phone-alt get"></i>
+                        <p>(+642) 245 356 432</p>
+                    </div>
+
+                    <h3>Support</h3>
+                    <div>
+                        <i class="fal fa-envelope-open-text get"></i>
+                        <p>IDS.2022@outlook.com</p>
+                    </div>
+
+                    <h3>Follow Us</h3>
+                    <div class="pro-links">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form">
+                <h4>Let's Connect</h4>
+                <p>Our correspondant will contact you soon!</p>
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" id="from_name" required>
+                    <input type="text" placeholder="Email" id="email_id" required>
+                </div>
+
+                <div class="form-col">
+                    <textarea name="" id="message" cols="30" rows="8" placeholder="How can we help?"></textarea>
+                </div>
+
+                <div class="form-col">
+                    <button class="yellow" onclick="SendMail()">Send</button>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25247.423843242035!2d175.2596589981126!3d-37.72136830789212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d1804f4672eab%3A0x9ffddf77f408e29a!2s23%20Rocky%20Road%2C%20Huntington%2C%20Hamilton%203210%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1706088597653!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
 
 
+        <!-- Footer -->
+        <footer>
+            <div class="footer-col">
+                <h3>Top Products</h3>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Websites</li>
+                <li>Marketing Services</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <li>Braand Assests</li>
+                <li>Investor Relations</li>
+                <li>Jobs</li>
+                <li>Terms of Services</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Features</h3>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Websites</li>
+                <li>Marketing Services</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <li>Experts</li>
+                <li>Guides</li>
+                <li>Research</li>
+                <li>Marketing Services</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>You can trust us, we only send promo offers</p>
+                <div class="subscribe">
+                    <input type="text" placeholder="Your Email Address">
+                    <a href="#" class="yellow">SUBSCRIBE</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>©2022 Internation Data Solution. All Rights Reserved</p>
+                <div class="pro-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripting -->
         <script>
+            $('#menu-btn').click(function() {
+            $('nav .navigation ul').addClass('active')
+           });
 
-            // Navaigation Bar
-
+           $('#menu-close').click(function() {
+            $('nav .navigation ul').removeClass('active')
+           });
         </script>
+
+<script>
+    function SendMail(){
+        var params = {
+            from_name : document.getElementById("from_name").value,
+            email_id : document.getElementById("email_id").value,
+            message: document.getElementById("message").value
+        }
+        emailjs.send("service_ebp834o", "template_tvoy6qb", params).then(function(res){
+            alert("Success!" + res.status);
+        })
+    }
+</script>
+    
 
     </body>
 
