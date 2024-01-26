@@ -577,8 +577,9 @@ footer .copyright .pro-links i:hover{
 }
 
 #blog-container .blogs img{
-  width: 100%;
+  width: 70%;
   border-radius: 19px;
+  height: 40vh;
 }
 
 #blog-container .blogs .post{
@@ -593,6 +594,12 @@ footer .copyright .pro-links i:hover{
 #blog-container .blogs .post p{
   color: #757373;
   padding-bottom: 20px;
+}
+
+#lst{
+  color: #757373;
+  padding: 13px ;
+  
 }
 
 #blog-container .blogs .post a{
@@ -632,7 +639,8 @@ footer .copyright .pro-links i:hover{
 
 
 #blog-container .blogpost img{
-  width: 100%;
+  width: 70%;
+  height: 40vh;
   margin-top: 40px;
   object-fit: cover;
 }
